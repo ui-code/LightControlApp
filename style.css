@@ -1,0 +1,132 @@
+
+body{
+    background-color: #2b2b2b;
+}
+.container {
+    width: 330px;
+    height: 650px;
+    background-color: #ebebeb;
+    margin-top: 25px;
+    border-radius: 40px;
+}
+
+.heading {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #959595;
+}
+
+div.dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #959595;
+}
+
+div.active {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    margin-top: -3px;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+}
+
+img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ebebeb;
+    box-sizing: content-box;
+}
+
+.fa {
+    font-size: 1.5em;
+    color: #adadad;
+}
+
+.bg {
+   background-color: #e3e3e3;
+   border-radius: 10px; 
+}
+
+.sub-head {
+    text-transform: uppercase;
+    color: #adadad;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to bottom right, #f8f8f8, #eee);
+    border-radius: 50%;
+    box-shadow: 0px 30px 50px 0px rgba(0,0,0,0.1),
+    inset 2px 2px 0px 0px rgba(255,255,255,0.5),
+    inset -2px 1px 0px 0px rgba(255,255,255,0.3);
+}
+
+.circle::after {
+    content: "";
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom,
+    #eee 50%, #f6f6f6 75%);
+    box-shadow: 0px -2px 10px 0px rgba(255,255,255,0.5);
+}
+
+circle.meter {
+    stroke-width: 25;
+    fill: none;
+    stroke: url(#gradient);
+    stroke-dasharray: 950;
+    stroke-dashoffset: 700;
+    stroke-linecap: round;
+    transform: rotate(225deg);
+    transform-origin: center;
+}
+
+.indicator-1 {
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-left: 20px solid #f6f6f6;
+    border-bottom: 13px solid transparent;
+    transform: rotate(235deg) translate(100px) ;
+    transform-origin: center;
+}
+
+.indicator-2 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    border-radius: 10px;
+
+    transform: rotate(235deg) translate(150px);
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5);
+}
+
+button {
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #adadad;
+}
+button.on {
+    background-color: #dbd9da;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+button.off {
+    background-color: white;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 5px 10px 20px 0px rgb(0,0,0,0.1);
+}

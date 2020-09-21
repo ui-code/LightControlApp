@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Controller</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row d-flex justify-content-center align-items-center pt-5 pb-2">
+            <h5 class="heading">Living Room</h5>
+        </div>
+
+        <div class="row d-flex justify-content-around px-5 mx-5">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="active"></div>
+            <div class="dot"></div>
+        </div>
+
+        <div class="row bg justify-content-center align-items-center mx-3 py-3 px-3 mt-5"
+        >
+            <div class="mr-auto sub-head">Access to this light</div>
+            <div>
+                <img src="https://images.pexels.com/photos/3831569/pexels-photo-3831569.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""
+                >
+                <img src="https://images.pexels.com/photos/638196/pexels-photo-638196.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""
+                class="ml-n3"
+                >
+            </div>
+            <i class="fa fa-angle-right ml-2"></i>
+        </div>
+
+        <div class="row justify-content-center align-items-center mt-5 pt-5">
+            <div class="circle d-flex justify-content-center align-items-center">
+                <svg width="350" height="400" class="position-absolute">
+                    <defs>
+                        <linearGradient id="gradient">
+                            <stop stop-color="#fb484a" offset="50%"/>
+                            <stop stop-color="#7588f8" offset="100%"/>
+                        </linearGradient>
+                    </defs>
+                    <circle cx="50%" cy="50%" r="150" class="meter"></circle>
+                </svg>
+                <div class="indicator-1 position-absolute"></div>
+                <div class="indicator-2 position-absolute"></div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center align-items-center mt-5 pt-3"
+        >
+            <button class="on p-3 mr-1">Lights On</button>
+            <button class="off p-3 mt-n2">Lights Off</button>
+        </div>
+    </div>
+</body>
+</html>
